@@ -1,0 +1,537 @@
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 20px 20px;
+    }
+
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 40vh;
+        background-color: rgba(136, 130, 130, 0.811);
+        position: absolute;
+        gap: 20px;
+        top: 70px;
+        left: 0;
+        z-index: 1;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .content-overlay h1 {
+        font-size: 34px; 
+    }
+
+    .content-overlay h2 {
+        font-size: 30px; 
+    }
+    
+    .btn {
+        font-size: 12px; 
+    }
+
+    .flavor-section {
+        padding: 40px 20px; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .flavor-text {
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    .flavor-image {
+        text-align: center; 
+    }
+
+    .flavor-section h3 {
+        font-size: 26px; 
+    }
+
+    .flavor-section p {
+        font-size: 18px; 
+    }
+
+    .flavor-image img {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .features-section {
+        flex-direction: column; 
+        padding: 50px 20px; 
+        align-items: center; 
+    }
+
+    .feature-item {
+        max-width: 100%; 
+        margin-bottom: 30px; 
+        text-align: center; 
+    }
+
+    .feature-item h4 {
+        font-size: 24px; 
+    }
+
+    .feature-item p {
+        font-size: 14px; 
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .on {
+        font-size: 36px;
+    }
+
+    .menu-section {
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .menu-item {
+        width: 200px;
+    }
+
+    .menu-item-overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item-overlay p {
+        font-size: 0.8rem;
+    }
+
+    .menu-item-overlay .price {
+        font-size: 1rem;
+    }
+
+}
+@media (min-width: 769px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    h2 {
+        font-size: 26px;
+    }
+
+    .one {
+        width: 80%;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .dots span {
+        width: 18px;
+        height: 18px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        height: 90vh; 
+    }
+    .background-wrapper {
+        padding: 30px 0;
+        background-size: contain;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .on {
+        font-size: 28px;
+    }
+
+    .menu-section {
+        gap: 20px;
+    }
+
+    .menu-item {
+        width: 150px;
+    }
+
+    .menu-item-overlay h3 {
+        font-size: 1rem;
+    }
+
+    .menu-item-overlay p {
+        font-size: 0.7rem;
+    }
+
+    .menu-item-overlay .price {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item {
+        flex-direction: row; 
+    }
+}
+
+  
+   @media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%; 
+    }
+    h2 {
+        font-size: 22px;
+    }
+
+    .one {
+        width: 90%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .dots span {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .content-overlay h1 {
+        font-size: 30px; 
+    }
+
+    .content-overlay h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 12px; 
+    }
+
+    .navbar li a {
+        font-size: 10px;
+    }
+
+
+    .flavor-section h3 {
+        font-size: 18px; 
+    }
+
+    .flavor-section p {
+        font-size: 16px; 
+    }
+
+    .flavor-image img {
+        max-width: 100%; 
+    }
+
+    .feature-item h4 {
+        font-size: 20px;
+    }
+
+    .feature-item p {
+        font-size: 12px; 
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    .on {
+        font-size: 24px;
+    }
+
+    .menu-section {
+        gap: 10px;
+    }
+
+    .menu-item {
+        width: 120px;
+    }
+
+    .menu-item-overlay h3 {
+        font-size: 0.9rem;
+    }
+
+    .menu-item-overlay p {
+        font-size: 0.6rem;
+    }
+
+    .menu-item-overlay .price {
+        font-size: 0.8rem;
+    }
+
+    .menu-container h1 {
+        font-size: 1rem;
+    }
+    
+    .menu-container h2 {
+        font-size: 0.9rem;
+    }
+    
+    .menu-item h3 {
+        font-size: 0.9rem;
+    }
+    
+    .menu-item p {
+        font-size: 0.7rem;
+    }
+    
+    .menu-item .price {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .one {
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .dots span {
+        width: 12px;
+        height: 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+    
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    .item-list {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+    }
+
+    .single-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .icon-wrapper {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .icon-wrapper img {
+        width: 40px;
+        height: 30px;
+    }
+
+    .item-title {
+        font-size: 18px;
+    }
+
+    .item-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .item-title {
+        font-size: 16px;
+    }
+
+    .item-description {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    .section-overlay {
+        padding: 15px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    .item-title {
+        font-size: 14px;
+    }
+
+    .item-description {
+        font-size: 10px;
+    }
+
+    .icon-wrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-wrapper img {
+        width: 30px;
+        height: 25px;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .booking-section {
+        padding: 30px;
+    }
+
+    .booking-section h2 {
+        font-size: 1.8em;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-section {
+        padding: 20px;
+    }
+
+    .booking-section h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group label {
+        font-size: 0.85em;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 300px) {
+    .booking-section h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .form-group label {
+        font-size: 0.8em;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 6px;
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 0.8em;
+    }
+}
+
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section .about-text h3,
+    .about-section .links h3 {
+        font-size: 14px;
+    }
+
+    .about-section .about-text p,
+    .about-section .links ul li {
+        font-size: 12px;
+    }
+}
+
+/* Extra small screens (300px and below) */
+@media (max-width: 300px) {
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section .about-text h3,
+    .about-section .links h3 {
+        font-size: 12px;
+    }
+
+    .about-section .about-text p,
+    .about-section .links ul li {
+        font-size: 10px;
+    }
+}
